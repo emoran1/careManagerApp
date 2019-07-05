@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing:border-box;
+}
+
+.left {
+  padding:1px;
+  float:left;
+  width:20%; /* The width is 20%, by default */
+}
+
+.main {
+  color: #4d4d4d;
+  padding:20px;
+  float:left;
+  width:60%; /* The width is 60%, by default */
+}
+
+div.main p{
+  width: 100%;
+  float: left;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  text-align: center;  
+}
+
+div.main hr{
+  border-top: 2px solid #c3c3c3;
+  float: left;
+  width: 100%;
+  margin: 0px;
+}
+
+div#img1{
+  width: 100%;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  float: left;
+}
+
+div#img1 img{
+  width: 20%;
+  margin-left: 40%;
+  margin-right: 40%;
+  height: 20%;
+}
+
+div#someText span{
+  width: 100%;
+  float: left;
+  text-align: center;
+  padding-bottom: 3px;
+}
+
+div.buttOn{
+  padding-top: 20px;
+  width: 100%;
+  float: left;
+}
+
+#firstB{
+  margin-left: 28%;
+}
+
+.btn {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.success {background-color: #2196F3;} /* Green */
+.success:hover {background-color: #0b7dda;}
+
+.info {background-color: #33d6ff;} /* Blue */
+.info:hover {background:   #00ccff;}
+
+
+
+.right {
+  padding:1px;
+  float:left;
+  width:20%; /* The width is 20%, by default */
+}
+
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width:600px) {
+  .left, .main, .right {
+    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="left">
+  
+</div>
+<!-- -->
+<div class="main">
+
+  <p> <span style="font-size: 115%;">Care Manager </span><a href="#">
+          <span class="glyphicon glyphicon-bell"></span><span style="font-size: 115%;">15</span>
+  </a></p>
+  <hr>
+  <div id="img1"><img src="img/user.png"></div>
+  <div id="someText"><span>James Caregiver</span><span>Affiliation CPC</span></div>
+  <div class="buttOn"> 
+        <button class="btn success" id="firstB"  onclick="window.location.href = 'viewclients.html';">View Clients</button>
+        <button class="btn info" onclick="window.location.href = 'caremanager.html';">Give Survey</button>
+  </div>
+</div>
+<!-- -->
+<div class="right">
+  
+</div>
+
+</body>
+</html>
