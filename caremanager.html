@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CareManager </title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<style>
+
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width:600px) {
+  .left, .main, .right {
+    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  div.buttOn{
+  padding-top: 20px;
+   width: 40%;
+   margin-left: 30%;
+   margin-right: 30%;
+  height: 50px;
+  float: left;
+}
+}
+
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="left"> </div>
+<!-- -->
+
+<div class="main">
+
+  <p> <span style="font-size: 115%;">Care Manager </span><a href="#">
+          <span class="glyphicon glyphicon-bell"></span><span style="font-size: 115%;">15</span>
+  </a></p>
+  <hr>
+  <div id="img1"><img src="img/user.png"></div>
+  <div id="someText"><span>James Caregiver</span><span>Affiliation CPC</span></div>
+  <div class="buttOn"> 
+        <button class="btn success" id="firstB"  onclick="window.location.href = 'viewclients.html';">View Clients</button>
+        <button class="btn info" onclick="window.location.href = 'caremanager.html';">Give Survey</button>
+  </div>
+</div>
+
+<!-- -->
+<div class="right"> </div>
+
+</body>
+</html>
